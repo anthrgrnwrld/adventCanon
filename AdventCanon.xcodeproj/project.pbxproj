@@ -12,8 +12,52 @@
 		369321F41C07C0C000607502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369321F21C07C0C000607502 /* Main.storyboard */; };
 		369321F61C07C0C000607502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369321F51C07C0C000607502 /* Assets.xcassets */; };
 		369321F91C07C0C000607502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369321F71C07C0C000607502 /* LaunchScreen.storyboard */; };
-		369322041C07C0C000607502 /* AdventCanonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369322031C07C0C000607502 /* AdventCanonTests.swift */; };
-		3693220F1C07C0C000607502 /* AdventCanonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693220E1C07C0C000607502 /* AdventCanonUITests.swift */; };
+		3693222A1C07C2C100607502 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322291C07C2C100607502 /* AVFoundation.framework */; };
+		369322411C09429600607502 /* 0_cello.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3693223B1C09429600607502 /* 0_cello.m4a */; };
+		369322421C09429600607502 /* 1_violin_patternA.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3693223C1C09429600607502 /* 1_violin_patternA.m4a */; };
+		369322431C09429600607502 /* 2_violin_patternB.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3693223D1C09429600607502 /* 2_violin_patternB.m4a */; };
+		369322441C09429600607502 /* 3_violin_patternC.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3693223E1C09429600607502 /* 3_violin_patternC.m4a */; };
+		369322451C09429600607502 /* 4_violin_patternD.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3693223F1C09429600607502 /* 4_violin_patternD.m4a */; };
+		369322461C09429600607502 /* 5_violin_patternE.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 369322401C09429600607502 /* 5_violin_patternE.m4a */; };
+		3693224C1C106AC700607502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3693224E1C106AC700607502 /* Localizable.strings */; };
+		369322551C10FB8100607502 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322541C10FB8100607502 /* MediaPlayer.framework */; };
+		369322671C11DEB100607502 /* Christmas-Bauble-Icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322561C11DEB100607502 /* Christmas-Bauble-Icon-2.png */; };
+		369322681C11DEB100607502 /* Christmas-Bauble-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322571C11DEB100607502 /* Christmas-Bauble-Icon.png */; };
+		369322691C11DEB100607502 /* Christmas-Bell-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322581C11DEB100607502 /* Christmas-Bell-Icon.png */; };
+		3693226A1C11DEB100607502 /* Christmas-Bow-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322591C11DEB100607502 /* Christmas-Bow-Icon.png */; };
+		3693226B1C11DEB100607502 /* Christmas-Candle-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225A1C11DEB100607502 /* Christmas-Candle-Icon.png */; };
+		3693226C1C11DEB100607502 /* Christmas-Candy-Cane-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225B1C11DEB100607502 /* Christmas-Candy-Cane-icon.png */; };
+		3693226D1C11DEB100607502 /* Christmas-Gift-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225C1C11DEB100607502 /* Christmas-Gift-Icon.png */; };
+		3693226E1C11DEB100607502 /* Christmas-Gingerbread-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225D1C11DEB100607502 /* Christmas-Gingerbread-Icon.png */; };
+		3693226F1C11DEB100607502 /* Christmas-Lights-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225E1C11DEB100607502 /* Christmas-Lights-Icon.png */; };
+		369322701C11DEB100607502 /* Christmas-Mistletoe-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693225F1C11DEB100607502 /* Christmas-Mistletoe-Icon.png */; };
+		369322711C11DEB100607502 /* Christmas-Santa-Claus-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322601C11DEB100607502 /* Christmas-Santa-Claus-Icon.png */; };
+		369322721C11DEB100607502 /* Christmas-Skating-Shoe-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322611C11DEB100607502 /* Christmas-Skating-Shoe-Icon.png */; };
+		369322731C11DEB100607502 /* Christmas-Snow-Flake-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322621C11DEB100607502 /* Christmas-Snow-Flake-Icon.png */; };
+		369322741C11DEB100607502 /* Christmas-Snowman-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322631C11DEB100607502 /* Christmas-Snowman-Icon.png */; };
+		369322751C11DEB100607502 /* Christmas-Star-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322641C11DEB100607502 /* Christmas-Star-Icon.png */; };
+		369322761C11DEB100607502 /* Christmas-Stockings-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322651C11DEB100607502 /* Christmas-Stockings-Icon.png */; };
+		369322771C11DEB100607502 /* Christmas-Tree-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322661C11DEB100607502 /* Christmas-Tree-Icon.png */; };
+		3693227D1C1200E700607502 /* MerryChristmas_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693227C1C1200E700607502 /* MerryChristmas_white.png */; };
+		3693227F1C12010200607502 /* MerryChristmasBlur_white.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3693227E1C12010200607502 /* MerryChristmasBlur_white.JPG */; };
+		369322851C125B7600607502 /* AdventCanonLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322821C125B7600607502 /* AdventCanonLogo.png */; };
+		369322861C125B7600607502 /* AdventCanonLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322831C125B7600607502 /* AdventCanonLogo@2x.png */; };
+		369322871C125B7600607502 /* AdventCanonLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322841C125B7600607502 /* AdventCanonLogo@3x.png */; };
+		3693228B1C125E3B00607502 /* messege.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322881C125E3B00607502 /* messege.png */; };
+		3693228C1C125E3B00607502 /* messege@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 369322891C125E3B00607502 /* messege@2x.png */; };
+		3693228D1C125E3B00607502 /* messege@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3693228A1C125E3B00607502 /* messege@3x.png */; };
+		3693229C1C1384AF00607502 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3693229B1C1384AF00607502 /* AdSupport.framework */; };
+		3693229E1C1384CF00607502 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3693229D1C1384CF00607502 /* AudioToolbox.framework */; };
+		369322A01C13850200607502 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3693229F1C13850200607502 /* CoreGraphics.framework */; };
+		369322A21C13851200607502 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322A11C13851200607502 /* CoreTelephony.framework */; };
+		369322A41C13852100607502 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322A31C13852100607502 /* EventKit.framework */; };
+		369322A61C13852800607502 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322A51C13852800607502 /* EventKitUI.framework */; };
+		369322A81C13854400607502 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322A71C13854400607502 /* MessageUI.framework */; };
+		369322AA1C13855300607502 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322A91C13855300607502 /* StoreKit.framework */; };
+		369322AC1C13855F00607502 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322AB1C13855F00607502 /* SystemConfiguration.framework */; };
+		369322B91C14975600607502 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322B01C14975600607502 /* GoogleMobileAds.framework */; };
+		369322BF1C14A5E600607502 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322BD1C14A5E600607502 /* Fabric.framework */; };
+		369322C01C14A5E600607502 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369322BE1C14A5E600607502 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +91,61 @@
 		3693220A1C07C0C000607502 /* AdventCanonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventCanonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3693220E1C07C0C000607502 /* AdventCanonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventCanonUITests.swift; sourceTree = "<group>"; };
 		369322101C07C0C000607502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369322291C07C2C100607502 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3693223B1C09429600607502 /* 0_cello.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0_cello.m4a; sourceTree = "<group>"; };
+		3693223C1C09429600607502 /* 1_violin_patternA.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_violin_patternA.m4a; sourceTree = "<group>"; };
+		3693223D1C09429600607502 /* 2_violin_patternB.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_violin_patternB.m4a; sourceTree = "<group>"; };
+		3693223E1C09429600607502 /* 3_violin_patternC.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_violin_patternC.m4a; sourceTree = "<group>"; };
+		3693223F1C09429600607502 /* 4_violin_patternD.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4_violin_patternD.m4a; sourceTree = "<group>"; };
+		369322401C09429600607502 /* 5_violin_patternE.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5_violin_patternE.m4a; sourceTree = "<group>"; };
+		3693224D1C106AC700607502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3693224F1C106B4100607502 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		369322501C106B4100607502 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		369322511C106B4100607502 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		369322541C10FB8100607502 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		369322561C11DEB100607502 /* Christmas-Bauble-Icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Bauble-Icon-2.png"; sourceTree = "<group>"; };
+		369322571C11DEB100607502 /* Christmas-Bauble-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Bauble-Icon.png"; sourceTree = "<group>"; };
+		369322581C11DEB100607502 /* Christmas-Bell-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Bell-Icon.png"; sourceTree = "<group>"; };
+		369322591C11DEB100607502 /* Christmas-Bow-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Bow-Icon.png"; sourceTree = "<group>"; };
+		3693225A1C11DEB100607502 /* Christmas-Candle-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Candle-Icon.png"; sourceTree = "<group>"; };
+		3693225B1C11DEB100607502 /* Christmas-Candy-Cane-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Candy-Cane-icon.png"; sourceTree = "<group>"; };
+		3693225C1C11DEB100607502 /* Christmas-Gift-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Gift-Icon.png"; sourceTree = "<group>"; };
+		3693225D1C11DEB100607502 /* Christmas-Gingerbread-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Gingerbread-Icon.png"; sourceTree = "<group>"; };
+		3693225E1C11DEB100607502 /* Christmas-Lights-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Lights-Icon.png"; sourceTree = "<group>"; };
+		3693225F1C11DEB100607502 /* Christmas-Mistletoe-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Mistletoe-Icon.png"; sourceTree = "<group>"; };
+		369322601C11DEB100607502 /* Christmas-Santa-Claus-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Santa-Claus-Icon.png"; sourceTree = "<group>"; };
+		369322611C11DEB100607502 /* Christmas-Skating-Shoe-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Skating-Shoe-Icon.png"; sourceTree = "<group>"; };
+		369322621C11DEB100607502 /* Christmas-Snow-Flake-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Snow-Flake-Icon.png"; sourceTree = "<group>"; };
+		369322631C11DEB100607502 /* Christmas-Snowman-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Snowman-Icon.png"; sourceTree = "<group>"; };
+		369322641C11DEB100607502 /* Christmas-Star-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Star-Icon.png"; sourceTree = "<group>"; };
+		369322651C11DEB100607502 /* Christmas-Stockings-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Stockings-Icon.png"; sourceTree = "<group>"; };
+		369322661C11DEB100607502 /* Christmas-Tree-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas-Tree-Icon.png"; sourceTree = "<group>"; };
+		3693227C1C1200E700607502 /* MerryChristmas_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MerryChristmas_white.png; sourceTree = "<group>"; };
+		3693227E1C12010200607502 /* MerryChristmasBlur_white.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MerryChristmasBlur_white.JPG; sourceTree = "<group>"; };
+		369322821C125B7600607502 /* AdventCanonLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdventCanonLogo.png; sourceTree = "<group>"; };
+		369322831C125B7600607502 /* AdventCanonLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdventCanonLogo@2x.png"; sourceTree = "<group>"; };
+		369322841C125B7600607502 /* AdventCanonLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AdventCanonLogo@3x.png"; sourceTree = "<group>"; };
+		369322881C125E3B00607502 /* messege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messege.png; sourceTree = "<group>"; };
+		369322891C125E3B00607502 /* messege@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messege@2x.png"; sourceTree = "<group>"; };
+		3693228A1C125E3B00607502 /* messege@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messege@3x.png"; sourceTree = "<group>"; };
+		3693229B1C1384AF00607502 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3693229D1C1384CF00607502 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3693229F1C13850200607502 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		369322A11C13851200607502 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		369322A31C13852100607502 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		369322A51C13852800607502 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		369322A71C13854400607502 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		369322A91C13855300607502 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		369322AB1C13855F00607502 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		369322AE1C13884C00607502 /* AdMob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdMob-Bridging-Header.h"; sourceTree = "<group>"; };
+		369322B01C14975600607502 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		369322B21C14975600607502 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		369322B31C14975600607502 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		369322B41C14975600607502 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		369322B51C14975600607502 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		369322B61C14975600607502 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		369322BD1C14A5E600607502 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		369322BE1C14A5E600607502 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +153,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369322AC1C13855F00607502 /* SystemConfiguration.framework in Frameworks */,
+				369322AA1C13855300607502 /* StoreKit.framework in Frameworks */,
+				369322A81C13854400607502 /* MessageUI.framework in Frameworks */,
+				369322A61C13852800607502 /* EventKitUI.framework in Frameworks */,
+				369322A41C13852100607502 /* EventKit.framework in Frameworks */,
+				369322A21C13851200607502 /* CoreTelephony.framework in Frameworks */,
+				369322C01C14A5E600607502 /* Crashlytics.framework in Frameworks */,
+				369322B91C14975600607502 /* GoogleMobileAds.framework in Frameworks */,
+				369322A01C13850200607502 /* CoreGraphics.framework in Frameworks */,
+				369322BF1C14A5E600607502 /* Fabric.framework in Frameworks */,
+				3693222A1C07C2C100607502 /* AVFoundation.framework in Frameworks */,
+				3693229E1C1384CF00607502 /* AudioToolbox.framework in Frameworks */,
+				3693229C1C1384AF00607502 /* AdSupport.framework in Frameworks */,
+				369322551C10FB8100607502 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +190,20 @@
 		369321E21C07C0C000607502 = {
 			isa = PBXGroup;
 			children = (
+				369322BD1C14A5E600607502 /* Fabric.framework */,
+				369322BE1C14A5E600607502 /* Crashlytics.framework */,
+				369322AF1C14975600607502 /* GoogleMobileAdsSdkiOS-7.5.2 */,
+				369322AB1C13855F00607502 /* SystemConfiguration.framework */,
+				369322A91C13855300607502 /* StoreKit.framework */,
+				369322A71C13854400607502 /* MessageUI.framework */,
+				369322A51C13852800607502 /* EventKitUI.framework */,
+				369322A31C13852100607502 /* EventKit.framework */,
+				369322A11C13851200607502 /* CoreTelephony.framework */,
+				3693229F1C13850200607502 /* CoreGraphics.framework */,
+				3693229D1C1384CF00607502 /* AudioToolbox.framework */,
+				3693229B1C1384AF00607502 /* AdSupport.framework */,
+				369322541C10FB8100607502 /* MediaPlayer.framework */,
+				369322291C07C2C100607502 /* AVFoundation.framework */,
 				369321ED1C07C0C000607502 /* AdventCanon */,
 				369322021C07C0C000607502 /* AdventCanonTests */,
 				3693220D1C07C0C000607502 /* AdventCanonUITests */,
@@ -97,12 +224,16 @@
 		369321ED1C07C0C000607502 /* AdventCanon */ = {
 			isa = PBXGroup;
 			children = (
+				369322AE1C13884C00607502 /* AdMob-Bridging-Header.h */,
 				369321EE1C07C0C000607502 /* AppDelegate.swift */,
 				369321F01C07C0C000607502 /* ViewController.swift */,
 				369321F21C07C0C000607502 /* Main.storyboard */,
 				369321F51C07C0C000607502 /* Assets.xcassets */,
 				369321F71C07C0C000607502 /* LaunchScreen.storyboard */,
 				369321FA1C07C0C000607502 /* Info.plist */,
+				369322491C0F039000607502 /* picture */,
+				369322281C07C27A00607502 /* sound */,
+				3693224E1C106AC700607502 /* Localizable.strings */,
 			);
 			path = AdventCanon;
 			sourceTree = "<group>";
@@ -125,6 +256,72 @@
 			path = AdventCanonUITests;
 			sourceTree = "<group>";
 		};
+		369322281C07C27A00607502 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				3693223B1C09429600607502 /* 0_cello.m4a */,
+				3693223C1C09429600607502 /* 1_violin_patternA.m4a */,
+				3693223D1C09429600607502 /* 2_violin_patternB.m4a */,
+				3693223E1C09429600607502 /* 3_violin_patternC.m4a */,
+				3693223F1C09429600607502 /* 4_violin_patternD.m4a */,
+				369322401C09429600607502 /* 5_violin_patternE.m4a */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		369322491C0F039000607502 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				369322881C125E3B00607502 /* messege.png */,
+				369322891C125E3B00607502 /* messege@2x.png */,
+				3693228A1C125E3B00607502 /* messege@3x.png */,
+				369322821C125B7600607502 /* AdventCanonLogo.png */,
+				369322831C125B7600607502 /* AdventCanonLogo@2x.png */,
+				369322841C125B7600607502 /* AdventCanonLogo@3x.png */,
+				3693227C1C1200E700607502 /* MerryChristmas_white.png */,
+				3693227E1C12010200607502 /* MerryChristmasBlur_white.JPG */,
+				369322561C11DEB100607502 /* Christmas-Bauble-Icon-2.png */,
+				369322571C11DEB100607502 /* Christmas-Bauble-Icon.png */,
+				369322581C11DEB100607502 /* Christmas-Bell-Icon.png */,
+				369322591C11DEB100607502 /* Christmas-Bow-Icon.png */,
+				3693225A1C11DEB100607502 /* Christmas-Candle-Icon.png */,
+				3693225B1C11DEB100607502 /* Christmas-Candy-Cane-icon.png */,
+				3693225C1C11DEB100607502 /* Christmas-Gift-Icon.png */,
+				3693225D1C11DEB100607502 /* Christmas-Gingerbread-Icon.png */,
+				3693225E1C11DEB100607502 /* Christmas-Lights-Icon.png */,
+				3693225F1C11DEB100607502 /* Christmas-Mistletoe-Icon.png */,
+				369322601C11DEB100607502 /* Christmas-Santa-Claus-Icon.png */,
+				369322611C11DEB100607502 /* Christmas-Skating-Shoe-Icon.png */,
+				369322621C11DEB100607502 /* Christmas-Snow-Flake-Icon.png */,
+				369322631C11DEB100607502 /* Christmas-Snowman-Icon.png */,
+				369322641C11DEB100607502 /* Christmas-Star-Icon.png */,
+				369322651C11DEB100607502 /* Christmas-Stockings-Icon.png */,
+				369322661C11DEB100607502 /* Christmas-Tree-Icon.png */,
+			);
+			name = picture;
+			sourceTree = "<group>";
+		};
+		369322AF1C14975600607502 /* GoogleMobileAdsSdkiOS-7.5.2 */ = {
+			isa = PBXGroup;
+			children = (
+				369322B01C14975600607502 /* GoogleMobileAds.framework */,
+				369322B11C14975600607502 /* Mediation Adapters */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.5.2";
+			sourceTree = "<group>";
+		};
+		369322B11C14975600607502 /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				369322B21C14975600607502 /* GADMAdNetworkAdapterProtocol.h */,
+				369322B31C14975600607502 /* GADMAdNetworkConnectorProtocol.h */,
+				369322B41C14975600607502 /* GADMEnums.h */,
+				369322B51C14975600607502 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				369322B61C14975600607502 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+			);
+			path = "Mediation Adapters";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +332,7 @@
 				369321E71C07C0C000607502 /* Sources */,
 				369321E81C07C0C000607502 /* Frameworks */,
 				369321E91C07C0C000607502 /* Resources */,
+				369322BC1C14A58D00607502 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -211,6 +409,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 369321E21C07C0C000607502;
 			productRefGroup = 369321EC1C07C0C000607502 /* Products */;
@@ -229,8 +428,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3693227D1C1200E700607502 /* MerryChristmas_white.png in Resources */,
+				369322691C11DEB100607502 /* Christmas-Bell-Icon.png in Resources */,
+				369322741C11DEB100607502 /* Christmas-Snowman-Icon.png in Resources */,
+				369322681C11DEB100607502 /* Christmas-Bauble-Icon.png in Resources */,
+				3693226B1C11DEB100607502 /* Christmas-Candle-Icon.png in Resources */,
+				369322441C09429600607502 /* 3_violin_patternC.m4a in Resources */,
+				3693226D1C11DEB100607502 /* Christmas-Gift-Icon.png in Resources */,
+				369322861C125B7600607502 /* AdventCanonLogo@2x.png in Resources */,
+				3693226C1C11DEB100607502 /* Christmas-Candy-Cane-icon.png in Resources */,
+				369322701C11DEB100607502 /* Christmas-Mistletoe-Icon.png in Resources */,
 				369321F91C07C0C000607502 /* LaunchScreen.storyboard in Resources */,
+				3693224C1C106AC700607502 /* Localizable.strings in Resources */,
+				369322671C11DEB100607502 /* Christmas-Bauble-Icon-2.png in Resources */,
+				369322761C11DEB100607502 /* Christmas-Stockings-Icon.png in Resources */,
+				369322721C11DEB100607502 /* Christmas-Skating-Shoe-Icon.png in Resources */,
+				369322451C09429600607502 /* 4_violin_patternD.m4a in Resources */,
+				3693228C1C125E3B00607502 /* messege@2x.png in Resources */,
+				3693228D1C125E3B00607502 /* messege@3x.png in Resources */,
+				369322431C09429600607502 /* 2_violin_patternB.m4a in Resources */,
+				3693228B1C125E3B00607502 /* messege.png in Resources */,
+				369322851C125B7600607502 /* AdventCanonLogo.png in Resources */,
+				369322731C11DEB100607502 /* Christmas-Snow-Flake-Icon.png in Resources */,
+				369322461C09429600607502 /* 5_violin_patternE.m4a in Resources */,
+				369322411C09429600607502 /* 0_cello.m4a in Resources */,
+				3693226A1C11DEB100607502 /* Christmas-Bow-Icon.png in Resources */,
+				369322871C125B7600607502 /* AdventCanonLogo@3x.png in Resources */,
+				3693226F1C11DEB100607502 /* Christmas-Lights-Icon.png in Resources */,
+				369322421C09429600607502 /* 1_violin_patternA.m4a in Resources */,
+				369322711C11DEB100607502 /* Christmas-Santa-Claus-Icon.png in Resources */,
+				3693227F1C12010200607502 /* MerryChristmasBlur_white.JPG in Resources */,
+				369322771C11DEB100607502 /* Christmas-Tree-Icon.png in Resources */,
 				369321F61C07C0C000607502 /* Assets.xcassets in Resources */,
+				369322751C11DEB100607502 /* Christmas-Star-Icon.png in Resources */,
+				3693226E1C11DEB100607502 /* Christmas-Gingerbread-Icon.png in Resources */,
 				369321F41C07C0C000607502 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +482,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		369322BC1C14A58D00607502 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run aa5fb1c10716edbe9930f03064170be8eb346c48 c23760415a68387d0027de6810daca8804e984f3cdb7751c33ae02fed9a2a1b6";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		369321E71C07C0C000607502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,7 +512,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369322041C07C0C000607502 /* AdventCanonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +519,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3693220F1C07C0C000607502 /* AdventCanonUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +542,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				369321F31C07C0C000607502 /* Base */,
+				3693224F1C106B4100607502 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -305,8 +551,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				369321F81C07C0C000607502 /* Base */,
+				369322501C106B4100607502 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3693224E1C106AC700607502 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3693224D1C106AC700607502 /* Base */,
+				369322511C106B4100607502 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,10 +653,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdventCanon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthrgrnwrld.AdventCanon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdMob-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -408,10 +674,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AdventCanon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anthrgrnwrld.AdventCanon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdMob-Bridging-Header.h";
 			};
 			name = Release;
 		};

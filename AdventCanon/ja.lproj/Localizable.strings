@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  AdventCanon
+
+  Created by Masaki Horimoto on 2015/12/03.
+  Copyright © 2015年 Masaki Horimoto. All rights reserved.
+*/
+
+// Localizable.strings(Japanese)
+"alertTitle" = "アドベント・カノンの決まり";
+"alertMessage1" = "今日はまだこのメロディーを開けません。\n";
+"alertMessage2" = "になるのをお待ち下さい。";
