@@ -231,7 +231,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         if playingStateArray[index] == .play {
             finishBlinkAnimationWithView(backgroundButtonArray[index - 1])
             backgroundButtonArray[index - 1].layer.opacity = 0.2
-            backgroundButtonArray[index - 1].backgroundColor = UIColor.greenColor()
+            backgroundButtonArray[index - 1].backgroundColor = UIColor.yellowColor()
         } else if playingStateArray[index] == .mute {
             backgroundButtonArray[index - 1].layer.opacity = 0.05
             backgroundButtonArray[index - 1].backgroundColor = UIColor.grayColor()
@@ -393,14 +393,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         switch playingStateArray[buttonNumber] {
         case .wait:
             backgroundButtonArray[buttonNumber - 1].layer.opacity = 0.2
-            backgroundButtonArray[buttonNumber - 1].backgroundColor = UIColor.greenColor()
+            backgroundButtonArray[buttonNumber - 1].backgroundColor = UIColor.yellowColor()
             blinkAnimationWithView(backgroundButtonArray[buttonNumber - 1])
         case .mute:
             backgroundButtonArray[buttonNumber - 1].layer.opacity = 0.05
             backgroundButtonArray[buttonNumber - 1].backgroundColor = UIColor.grayColor()
         case .play:
             backgroundButtonArray[buttonNumber - 1].layer.opacity = 0.2
-            backgroundButtonArray[buttonNumber - 1].backgroundColor = UIColor.greenColor()
+            backgroundButtonArray[buttonNumber - 1].backgroundColor = UIColor.yellowColor()
         case .stop:
             finishBlinkAnimationWithView(backgroundButtonArray[buttonNumber - 1])
         }
