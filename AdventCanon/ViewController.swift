@@ -14,7 +14,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
     
     @IBOutlet var backgroundButtonArray: [UIView]!
     @IBOutlet weak var parentVolumeView: UIView!
-    
+
+    //state管理用enum
     enum playingState: Int {
         case stop
         case wait
@@ -22,60 +23,68 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         case mute
     }
 
-    var instrumentArray: [AVAudioPlayer]? = []
-    var instrumentStateArray: [playingState]? = []
-    let filenameArray: [NSString] = ["0_cello","1_violin_patternA","2_violin_patternB","3_violin_patternC","4_violin_patternD","5_violin_patternE","0_cello","1_violin_patternA","2_violin_patternB","3_violin_patternC","4_violin_patternD","5_violin_patternE","0_cello"]
-    let fileExtension: String = "m4a"
-    var count: Int = 0
-    let soundNumber = 6
-    var playingStateArray: [playingState] = [.stop, .stop, .stop, .stop, .stop, .stop]
+    var instrumentArray: [AVAudioPlayer]? = []      //同時再生するAVAudioPlayerの配列
+    let filenameArray: [NSString] = ["0_cello","1_violin_patternA","2_violin_patternB","3_violin_patternC","4_violin_patternD","5_violin_patternE","0_cello","1_violin_patternA","2_violin_patternB","3_violin_patternC","4_violin_patternD","5_violin_patternE","0_cello"] //サウンドファイル名の配列
+    let fileExtension: String = "m4a"   //使用するサウンドファイルの拡張子
+    var count: Int = 0  //ループ回数が奇数回か偶数回かの判別用
+    let soundNumber = 6 //使用しているサウンドファイルの種類数
+    var playingStateArray: [playingState] = [.stop, .stop, .stop, .stop, .stop, .stop]  //各AVPlayerの状態の配列
     let defalutVolume : Float = 0.8
-    let dateFormatter = NSDateFormatter()
+    let dateFormatter = NSDateFormatter()   //デフォルトボリューム
     var canPlayArray: [Bool] = [false, false, false, false, false]
-    let strOpenDateArray: [String] = ["2015/11/29", "2015/12/06", "2015/12/13", "2015/12/20", "2015/12/24"]    //本番用
-    //let strOpenDateArray: [String] = ["2015/11/29", "2015/11/29", "2015/11/29", "2015/11/29", "2015/11/29"]    //Debug用
-    
+    let strOpenDateArray: [String] = ["2015/11/29", "2015/12/06", "2015/12/13", "2015/12/20", "2015/12/24"]    //アドベントカノン再生可能日管理用配列 本番用
+    //let strOpenDateArray: [String] = ["2015/11/29", "2015/11/29", "2015/11/29", "2015/11/29", "2015/11/29"]    //アドベントカノン再生可能日管理用配列 Debug用
+
+    //Admob用
     let YOUR_ID = "ca-app-pub-3530000000000000/0123456789"  // Enter Ad's ID here
     let TEST_DEVICE_ID = "61b0154xxxxxxxxxxxxxxxxxxxxxxxe0" // Enter Test ID here
     let AdMobTest:Bool = true
     let SimulatorTest:Bool = true
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let encodeFileURLArray = getInstrumentFileURL(filenameArray)
 
+        //サウンド生成用のPlayer設定
+        let encodeFileURLArray = getInstrumentFileURL(filenameArray)    //ファイルパスをURL規定(?)に則した形に変換
         for (index, _) in encodeFileURLArray.enumerate() {
             
             do {
-                instrumentArray?.append(try AVAudioPlayer(contentsOfURL: encodeFileURLArray[index]))
-                instrumentArray![index].numberOfLoops = 0
-                instrumentArray![index].volume = defalutVolume
-                instrumentArray![index].prepareToPlay()
+                instrumentArray?.append(try AVAudioPlayer(contentsOfURL: encodeFileURLArray[index]))    //指定したサウンドファイル数分Playerを作成
+                instrumentArray![index].numberOfLoops = 0   //Loopはしない
+                instrumentArray![index].volume = defalutVolume  //各Playerの再生ボリュームを基準値の0.8にする
+                instrumentArray![index].prepareToPlay()         //再生準備(バッファ読み込み)
             } catch {
                 fatalError("Failed to initialize a player.")
             }
             
         }
-        
+
+        //Admob
         let bannerView:GADBannerView = getAdBannerView()
         self.view.addSubview(bannerView)
-        
+
+        //ボタン(のバックのView)の見た目の設定
         for var i = 0; i < (soundNumber - 1); i++ {
             backgroundButtonArray[i].layer.cornerRadius = 15.0
             backgroundButtonArray[i].layer.borderWidth = 2
         }
         
+        //現在日時を取得し、再生可能ファイルを選別
         getCurrectDate()
 
+        //(Simulator不可)VolumeViewを表示する
         let volumeView = MPVolumeView(frame: parentVolumeView.bounds)
         parentVolumeView.addSubview(volumeView)
 
+        //繰り返し長さ管理用Playerの設定
         instrumentArray!.last!.delegate = self
         instrumentArray!.last!.volume = 0
         instrumentArray!.last!.numberOfLoops = 0
         instrumentArray!.last!.play()
-        
+
+        //ベースとなるループ音声を再生。状態を同時に変更。
         instrumentArray![0].play()
         playingStateArray[0] = .play
         
@@ -463,76 +472,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, GADBannerViewDele
         //        view.layer.removeAllAnimations()
         //        view.alpha = 1.0
     }
-    
-//    /**
-//     タイマー関数。1秒毎に呼び出される。
-//     */
-//    func updateTimer() {
-//        //println("\(__FUNCTION__) is called")
-//        
-//        countupTimer++                                      //countupTimerをインクリメント
-//        let countdownTimer = editTimerCount(countupTimer)   //カウントアップ表記をカウントダウン表記へ変換
-//        updateTimerLabel(countdownTimer)                    //タイマー表示ラベルをアップデート
-//        
-//        if countdownTimer <= 0 {timeupFunc()}               //ゲーム開始より10秒経過後、ゲーム完了処理を実行
-//        
-//        print("\(__FUNCTION__) is called! \(countupTimer)")
-//    }
-//    
-//    /**
-//     ゲーム完了時に実行する関数。
-//     */
-//    func timeupFunc() {
-//        
-//        let highScoreFlag = countPushing > highScore ? true : false
-//        highScore = countPushing > highScore ? countPushing : highScore
-//        timerState = false
-//        startState = false
-//        timer.invalidate()
-//        print("highScore is \(highScore)")
-//        ud.setInteger(highScore, forKey: udKey)     //ハイスコアをNSUserDefaultsのインスタンスに保存
-//        ud.synchronize()                            //保存する情報の反映
-//        GKScoreUtil.reportScores(highScore, leaderboardid: leaderboardid)   //GameCenter Score Transration
-//        
-//        //ハイスコア更新の場合にはimageBeeとカウンタ表示を点滅させる & サウンドを再生する & スクリーンキャプチャ
-//        if highScoreFlag {
-//            capturedImage = GetImage() as UIImage     // キャプチャ画像を取得.
-//            AudioServicesPlaySystemSoundWithoutVibration("alarm.caf")
-//            blinkAnimationWithView(imageBee)
-//            for (_, view) in self.counterDigit.enumerate() {
-//                blinkAnimationWithView(view)
-//            }
-//        }
-//        
-//        
-//    }
-//    
-//    /**
-//     指定されたViewを1秒間隔で点滅させる
-//     
-//     :param: view:点滅させるView
-//     */
-//    func blinkAnimationWithView(view :UIView) {
-//        UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.Repeat, animations: { () -> Void in
-//            view.alpha = 0
-//            }, completion: nil)
-//    }
-//    
-//    /**
-//     指定されたViewの点滅アニメーションを終了する
-//     
-//     :param: view:点滅を終了するView
-//     */
-//    func finishBlinkAnimationWithView(view :UIView) {
-//        UIView.setAnimationBeginsFromCurrentState(true)
-//        UIView.animateWithDuration(0.001, animations: {
-//            view.alpha = 1.0
-//        })
-//        //        //こっちの方法でもOK
-//        //        view.layer.removeAllAnimations()
-//        //        view.alpha = 1.0
-//    }
-
 
 }
 

@@ -24,7 +24,7 @@
                                 <animations/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krP-Gc-Iwt">
-                                <rect key="frame" x="53" y="500" width="299" height="20"/>
+                                <rect key="frame" x="53" y="567" width="299" height="20"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="K7y-7P-QdU"/>
@@ -180,7 +180,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-fG-ylJ">
-                                <rect key="frame" x="20" y="499" width="33" height="21"/>
+                                <rect key="frame" x="20" y="566" width="33" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3gs-ye-F1g"/>
@@ -212,8 +212,14 @@
                             <constraint firstItem="AeT-fz-DPx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oGm-fq-zir"/>
                             <constraint firstItem="o2V-yV-umA" firstAttribute="width" secondItem="LGq-hA-48F" secondAttribute="width" multiplier="0.7" id="rKm-ub-F8a"/>
                             <constraint firstItem="n7l-He-o6a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sGo-bJ-br9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="krP-Gc-Iwt" secondAttribute="bottom" constant="80" id="vkN-kS-mQ4"/>
                             <constraint firstItem="krP-Gc-Iwt" firstAttribute="leading" secondItem="fxi-fG-ylJ" secondAttribute="trailing" id="x4V-He-7Ox"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aYo-aY-Bay"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
